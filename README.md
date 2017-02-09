@@ -1,4 +1,4 @@
 This is a django project which can play music online
 
-Author
+Thanks
 Shubham Mishra
