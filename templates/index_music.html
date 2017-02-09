@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music</title>
+    </head>
+    <body>
+    <h2>list of Albums:</h2>
+        <ul>
+        {% for album in latest_album_list %}
+            <li><a href="{% url 'detail' album.id %}">{{ album.album_title }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

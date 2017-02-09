@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music</title>
+	    <script type="text/javascript">
+	    	function pauseOthers(current) {
+	    		audios = document.getElementsByTagName("audio")
+	    		for (var i = 0; i < audios.length; i++) {
+	    			if(audios[i] != current) {
+	    				audios[i].pause();
+	    			}
+	    		}
+	    	}
+	    </script>
+    </head>
+    <body>
+    <h1>{{ album.album_title }}</h1>
+    <table>
+    {% for song in songs %}
+    <tr>
+    <td>{{song.song_title}}</td>
+    <td>
+	    <audio onplay="pauseOthers(this);" controls>
+	    	<source src="{{MUSIC_URL}}{{ song.file.url }}" type="audio/mp3"/>
+		</audio>
+	</td>
+	</tr>
+    {% endfor %}
+    </table>
+    </body>
+</html>
