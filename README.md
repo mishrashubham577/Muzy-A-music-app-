@@ -1,5 +1,5 @@
 # Muzy 
 
-####This is a django project which can play music online so nicely.
+#### This is a django project which can play music online so nicely.
 
-##An advanced version of muzy is coming soon.
+## An advanced version of muzy is coming soon.
