@@ -1,7 +1,7 @@
 amqp==2.3.2
 billiard==3.5.0.4
 celery==4.2.1
-Django==1.8
+Django==2.2.24
 django-audiofield==0.10.0
 django-celery==3.1.15
 kombu==4.2.1
